@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/10/14 17:22:48.421,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/14 17:53:43.411,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Terceiro_projeto_lados_triangulo.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/14 17:53:43.411,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Terceiro_projeto_lados_triangulo.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/10/14 18:09:04.225,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\projeto_triangulo.dproj=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
