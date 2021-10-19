@@ -1,0 +1,14 @@
+program projeto_media_arrays;
+
+uses
+  Vcl.Forms,
+  media_array in 'media_array.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
