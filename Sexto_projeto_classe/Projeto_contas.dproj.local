@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/07 17:04:24.000.250,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/07 17:12:50.000.628,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/11/07 17:14:16.000.673,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Sexto_projeto_classe\teste\Contas.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/11/07 17:15:01.000.849,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Sexto_projeto_classe\teste\Sexto_projeto_contas.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/07 17:15:01.000.850,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Sexto_projeto_classe\teste\Sexto_projeto_contas.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/11/07 17:19:01.000.226,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Sexto_projeto_classe\teste\Projeto_contas.dproj=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,15 @@
+program projeto_classes;
+
+uses
+  Vcl.Forms,
+  sexto_projeto_classe in 'sexto_projeto_classe.pas' {Form1},
+  MinhasClasses in 'MinhasClasses.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

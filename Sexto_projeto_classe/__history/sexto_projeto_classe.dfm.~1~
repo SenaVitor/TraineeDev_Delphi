@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Saque: TButton
+    Left = 480
+    Top = 40
+    Width = 97
+    Height = 25
+    Caption = 'Saque'
+    TabOrder = 0
+  end
+  object Deposito: TButton
+    Left = 480
+    Top = 80
+    Width = 97
+    Height = 25
+    Caption = 'Deposito'
+    TabOrder = 1
+  end
+  object ConsultaSaldo: TButton
+    Left = 480
+    Top = 120
+    Width = 97
+    Height = 25
+    Caption = 'Consultar Saldo'
+    TabOrder = 2
+  end
+  object RContaCorrente: TRadioButton
+    Left = 73
+    Top = 40
+    Width = 113
+    Height = 17
+    Caption = 'Conta Corrente'
+    TabOrder = 3
+  end
+  object RContaPoupanca: TRadioButton
+    Left = 73
+    Top = 84
+    Width = 113
+    Height = 17
+    Caption = 'Conta Poupan'#231'a'
+    TabOrder = 4
+  end
+  object Memo1: TMemo
+    Left = 192
+    Top = 38
+    Width = 249
+    Height = 107
+    Lines.Strings = (
+      '')
+    TabOrder = 5
+  end
+end

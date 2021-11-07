@@ -1,0 +1,114 @@
+unit sexto_projeto_classe;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button: TButton;
+    Memo1: TMemo;
+    EditValor: TEdit;
+    Label1: TLabel;
+    RadioGroup1: TRadioGroup;
+    procedure ButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  MinhasClasses;
+
+{$R *.dfm}
+
+var
+  contaCorrente: TContaCorrente;
+  contaPoupanca: TContaPoupanca;
+  Dinheiro : Double;
+  MsgRetorno : String;
+  i : Integer;
+
+procedure TForm1.ButtonClick(Sender: TObject);
+begin
+  Memo1.Clear;
+  Dinheiro := strToFloat(EditValor.Text);
+  if(RadioGroup1.ItemIndex = 0) then
+  begin
+    contaCorrente := nil;
+    try
+      Dinheiro := StrToFloat(EditValor.Text);
+      contaCorrente := TContaCorrente.Create(800);
+      Memo1.Lines.Add('Saldo: '+ FloatToStr(contaCorrente.Saldo));
+      Memo1.Lines.Add('');
+      Memo1.Lines.Add('Depositar(1500)');
+      if not ContaCorrente.Depositar(1500, MsgRetorno) then
+        Memo1.Lines.Add(MsgRetorno);
+      Memo1.Lines.Add('Saldo: '+ FloatToStr(ContaCorrente.Saldo));
+      Memo1.Lines.Add('');
+
+      Memo1.Lines.Add('Sacar(1100)');
+      if not ContaCorrente.Sacar(1100, MsgRetorno) then
+        Memo1.Lines.Add(MsgRetorno);
+      Memo1.Lines.Add('');
+
+      for I := 1 to 3 do
+      begin
+        Memo1.Lines.Add('Sacar(800)');
+        if not ContaCorrente.Sacar(800, MsgRetorno) then
+          Memo1.Lines.Add(MsgRetorno);
+        Memo1.Lines.Add('Saldo: '+ FloatToStr(ContaCorrente.Saldo));
+        Memo1.Lines.Add('');
+      end;
+    finally
+      contaCorrente.Free;
+    end;
+  end
+  else
+  begin
+    contaPoupanca := nil;
+    try
+      Memo1.Clear;
+      ContaPoupanca := TContaPoupanca.Create(800);
+      Memo1.Lines.Add('Saldo: '+ FloatToStr(ContaPoupanca.Saldo));
+      Memo1.Lines.Add('');
+
+      Memo1.Lines.Add('Deposito(100)');
+      if not ContaPoupanca.Depositar(100, MsgRetorno) then
+        Memo1.Lines.Add(MsgRetorno);
+      Memo1.Lines.Add('');
+
+      Memo1.Lines.Add('Sacar(600)');
+      if not ContaPoupanca.Sacar(600, MsgRetorno) then
+        Memo1.Lines.Add(MsgRetorno);
+      Memo1.Lines.Add('');
+
+      Memo1.Lines.Add('Deposito(300)');
+      if not ContaPoupanca.Depositar(300, MsgRetorno) then
+        Memo1.Lines.Add(MsgRetorno);
+      Memo1.Lines.Add('Saldo: '+ FloatToStr(ContaPoupanca.Saldo));
+      Memo1.Lines.Add('');
+
+      for I := 1 to 3 do
+      begin
+        Memo1.Lines.Add('Sacar(500)');
+        if not ContaPoupanca.Sacar(500, MsgRetorno) then
+          Memo1.Lines.Add(MsgRetorno);
+        Memo1.Lines.Add('Saldo: '+ FloatToStr(ContaPoupanca.Saldo));
+        Memo1.Lines.Add('');
+      end;
+    finally
+      contaPoupanca.Free;
+    end;
+  end;
+end;
+
+end.

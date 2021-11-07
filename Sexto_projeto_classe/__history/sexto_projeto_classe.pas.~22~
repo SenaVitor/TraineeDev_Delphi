@@ -1,0 +1,85 @@
+unit sexto_projeto_classe;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button: TButton;
+    Memo1: TMemo;
+    EditValor: TEdit;
+    Label1: TLabel;
+    RadioGroup1: TRadioGroup;
+    procedure ButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  MinhasClasses;
+
+{$R *.dfm}
+
+var
+  contaCorrente: TContaCorrente;
+  contaPoupanca: TContaPoupanca;
+  Dinheiro : Double;
+
+procedure TForm1.ButtonClick(Sender: TObject);
+begin
+  Memo1.Clear;
+  Dinheiro := strToFloat(EditValor.Text);
+  if(RadioGroup1.ItemIndex = 0) then
+  begin
+    contaCorrente := nil;
+    try
+      contaCorrente := TContaCorrente.Create(800);
+      contaCorrente.Sacar(Dinheiro);
+
+      if(msg <> null) then
+      begin
+        Memo1.Lines.Add(msg);
+      end
+      else
+      begin
+        Memo1.Lines.Add('Saque de ' + FloatToStr(Dinheiro) + ' reais realizado com sucesso!');
+        Memo1.Lines.Add('saldo atual = ' + FloatToStr(contaCorrente.Saldo) + ' reais');
+      end;
+    finally
+      contaCorrente.Free;
+    end;
+  end
+  else
+  begin
+    contaPoupanca := nil;
+    try
+      contaPoupanca := TContaPoupanca.Create(800);
+      contaPoupanca.Sacar(Dinheiro);
+      msg := contaPoupanca.Mensagem;
+      if(msg <> null) then
+      begin
+        Memo1.Lines.Add(msg);
+        msg := '';
+      end
+      else
+      begin
+        Memo1.Lines.Add('Saque de ' + FloatToStr(Dinheiro) + ' reais realizado com sucesso!');
+        Memo1.Lines.Add('saldo atual = ' + FloatToStr(contaPoupanca.Saldo) + ' reais');
+      end;
+    finally
+      contaPoupanca.Free;
+    end;
+  end;
+end;
+
+end.

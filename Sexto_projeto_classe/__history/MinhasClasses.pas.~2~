@@ -1,0 +1,93 @@
+unit MinhasClasses;
+
+interface
+
+type
+
+  TConta = class
+  private
+    FMensagem: String;
+    FLimite, FSaldo: double;
+  public
+    property Mensagem: string read FMensagem write FMensagem;
+    property Saldo: double read FSaldo write FSaldo;
+    property Limite: double read FLimite write FLimite;
+    function Sacar(Valor: Double): Double; virtual;
+    function Depositar(Valor: Double): Double; virtual;
+    function ConsultarSaldo(): Double; virtual;
+  end;
+
+  TContaCorrente = class(TConta)
+  private
+    FDesconto: double;
+  public
+    property Desconto: double read FDesconto write FDesconto;
+    function Sacar(Valor: Double): Double; override;
+  end;
+
+  TContaPoupanca = class(TConta)
+  private
+    FValorMinimo: double;
+  public
+    property ValorMinimo: double read FValorMinimo write FValorMinimo;
+    function Sacar(Valor: Double): Double; override;
+    function Depositar(Valor: Double): Double; override;
+  end;
+
+implementation
+
+{ TConta }
+
+function TConta.ConsultarSaldo: Double;
+begin
+
+end;
+
+function TConta.Depositar(Valor: Double): Double;
+begin
+  Saldo := Saldo + Valor;
+end;
+
+function TConta.Sacar(Valor: Double): Double;
+begin
+  Saldo := Saldo - Valor;
+end;
+
+{ TContaCorrente }
+
+function TContaCorrente.Sacar(Valor: Double): Double;
+begin
+  if(Valor <= 1000) then
+  begin
+    Desconto := Valor/100;
+    Saldo := Saldo - Valor - Desconto;
+  end
+  else
+  begin
+    Mensagem := 'O limite para saques na conta corrente é de 1000 reais';
+  end;
+end;
+
+{ TContaPoupanca }
+
+function TContaPoupanca.Depositar(Valor: Double): Double;
+begin
+  if(Valor > 200) then
+  begin
+    inherited;
+  end;
+end;
+
+function TContaPoupanca.Sacar(Valor: Double): Double;
+begin
+  if(Valor <= 500) then
+  begin
+    inherited;
+  end
+  else
+  begin
+    Mensagem := 'O limite para saques na conta poupança é de 500 reais';
+  end;
+end;
+
+end.
