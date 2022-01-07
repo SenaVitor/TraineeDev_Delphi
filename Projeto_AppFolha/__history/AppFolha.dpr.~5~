@@ -1,0 +1,16 @@
+program AppFolha;
+
+uses
+  Vcl.Forms,
+  Principal in 'Principal.pas' {Form1},
+  Conexao in 'Conexao.pas' {TDM: TDM};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.

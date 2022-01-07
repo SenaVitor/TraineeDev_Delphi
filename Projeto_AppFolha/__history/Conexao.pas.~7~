@@ -1,0 +1,34 @@
+unit Conexao;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
+  Data.DB, FireDAC.Comp.Client, FireDAC.Phys.FBDef, FireDAC.Phys.IBBase,
+  FireDAC.Phys.FB;
+
+type
+  TDM = class(TDataModule)
+    FDConnection1: TFDConnection;
+    FDPhysFBDriverLink1: TFDPhysFBDriverLink;
+  private
+    { Private declarations }
+    FappPatch: string;
+  public
+    { Public declarations }
+    property AppPatch: String read FappPatch;
+  end;
+
+var
+  DM: TDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+end.

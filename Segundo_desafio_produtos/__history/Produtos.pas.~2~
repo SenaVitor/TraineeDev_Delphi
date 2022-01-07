@@ -1,0 +1,22 @@
+unit Produtos;
+
+interface
+
+type
+  TProduto = class
+    strict private
+      FCodigo: Integer;
+      FQtd: Integer;
+      FValor: Currency;
+    public
+      property Codigo: Integer read FCodigo write FCodigo;
+      property Qtd: Integer read FQtd write FQtd;
+      property Valor: Currency read FValor write FValor;
+  end;
+
+implementation
+
+var
+  Produto1, Produto2, Produto3 : TProduto;
+
+end.

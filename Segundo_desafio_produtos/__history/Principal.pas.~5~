@@ -1,0 +1,73 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Generics.Collections, Produtos;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    Button: TButton;
+    procedure FormCreate(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+var
+  P1, P2, P3 : TProduto;
+
+procedure adicionarP1(Cod, Quantidade: Integer; Val: Currency);
+
+begin
+  P1 := TProduto.Create;
+  P1.Codigo := Cod;
+  P1.Qtd := Quantidade;
+  P1.Valor := Val;
+  P1.Free;
+end;
+
+procedure adicionarP2(Cod, Quantidade: Integer; Val: Currency);
+
+begin
+  P2 := TProduto.Create;
+  P2.Codigo := Cod;
+  P2.Qtd := Quantidade;
+  P2.Valor := Val;
+  P2.Free;
+end;
+
+procedure adicionarP3(Cod, Quantidade: Integer; Val: Currency);
+
+begin
+  P3 := TProduto.Create;
+  P3.Codigo := Cod;
+  P3.Qtd := Quantidade;
+  P3.Valor := Val;
+  P3.Free;
+end;
+
+function ProdutosComMaiorValorVendido(Produtos: TObjectList<TProduto>): String;
+
+begin
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  adicionarP1(1,2,20.3);
+  adicionarP2(2,3,11.2);
+  adicionarP3(3,6,2.9);
+end;
+
+end.

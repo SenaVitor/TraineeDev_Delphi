@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/12/16 17:27:51.000.834,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/16 18:27:47.000.623,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Principal.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/12/16 18:27:47.000.623,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Principal.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/16 18:28:02.000.590,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/16 18:28:36.000.226,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/12/16 18:29:11.000.808,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/12/16 18:29:11.000.808,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2021/12/16 18:33:18.000.371,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/16 18:39:30.000.696,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/12/16 18:39:30.000.696,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/16 18:39:57.000.298,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\AppFolha.dproj=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

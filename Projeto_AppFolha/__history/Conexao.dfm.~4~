@@ -1,0 +1,10 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 423
+  Width = 569
+  object FDConnection1: TFDConnection
+    LoginPrompt = False
+    Left = 56
+    Top = 64
+  end
+end
