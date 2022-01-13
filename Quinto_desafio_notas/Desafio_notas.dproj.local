@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/01/13 17:32:41.740,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/13 18:30:52.393,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Quinto_desafio_notas\Quinto_desafio_notas.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/13 18:30:52.393,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Quinto_desafio_notas\Quinto_desafio_notas.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/13 19:34:45.234,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Quinto_desafio_notas\Desafio_notas.dproj=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
