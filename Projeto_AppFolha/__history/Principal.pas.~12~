@@ -1,0 +1,74 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Conexao, CadEventos, CadCargos, CadFuncionarios;
+
+type
+  TFrmPrincipal = class(TForm)
+    MainMenu1: TMainMenu;
+    Cadastros1: TMenuItem;
+    Cargos: TMenuItem;
+    Eventos: TMenuItem;
+    CadFuncionarios: TMenuItem;
+    TabelaINSS: TMenuItem;
+    TabelaIRRF: TMenuItem;
+    CadSair: TMenuItem;
+    Processos: TMenuItem;
+    Mudancasdesalarios: TMenuItem;
+    eventofuncionrios: TMenuItem;
+    ProcFolhaPagamento: TMenuItem;
+    Relatorios: TMenuItem;
+    ReFolhaPagamento: TMenuItem;
+    ReFuncionarios: TMenuItem;
+    Sair: TMenuItem;
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure EventosClick(Sender: TObject);
+    procedure CargosClick(Sender: TObject);
+    procedure CadFuncionariosClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.CadFuncionariosClick(Sender: TObject);
+begin
+  FormFuncionarios := TFormFuncionarios.Create(Self);
+  FormFuncionarios.ShowModal;
+  FormFuncionarios.Free;
+end;
+
+procedure TFrmPrincipal.CargosClick(Sender: TObject);
+begin
+  FormCargos := TFormCargos.Create(Self);
+  FormCargos.ShowModal;
+  FormCargos.Free;
+end;
+
+procedure TFrmPrincipal.EventosClick(Sender: TObject);
+begin
+  FormEventos.Visible := true;
+end;
+
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+begin
+  DM := TDM.Create(Self);
+end;
+
+procedure TFrmPrincipal.FormDestroy(Sender: TObject);
+begin
+  DM.Free;
+end;
+
+end.

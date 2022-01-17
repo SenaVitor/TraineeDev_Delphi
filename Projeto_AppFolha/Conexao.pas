@@ -40,8 +40,19 @@ procedure TDM.DataModuleCreate(Sender: TObject);
 begin
   try
     FAppPath := ExtractFilePath(Application.ExeName);
-    FDConnection1.Params.Values['Database'] := FAppPath + 'DADOS.FDB';
+    FDConnection1.Params.Values['Database'] := FAppPath + 'APPFOLHA.FDB';
     FDConnection1.Connected := True;
+
+      //Exemplo de configuração via código
+    //Connection.DriverName := 'FB';
+    //Connection.LoginPrompt := False;
+    //Connection.Params.Database := 'C:\Projetos\DADOS.FDB';
+    //Connection.Params.UserName := 'SYSDBA';
+    //Connection.Params.Password := 'masterkey';
+    //Connection.Params.Values['Database'] := FAppPath + 'DADOS.FDB';
+    //Connection.Params.Values['Server'] := 'localhost';
+    //Connection.Params.Values['Port'] := '3050';
+    //Connection.Connected := True;
   except
     ShowMessage('Falha ao iniciar a aplicação.');
     Application.Terminate;

@@ -1,0 +1,36 @@
+inherited FormCadPadrao1: TFormCadPadrao1
+  Caption = 'FormCadPadrao1'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PageControl1: TPageControl
+    ActivePage = TbsLista
+    inherited TbsLista: TTabSheet
+      inherited DBGrid1: TDBGrid
+        DataSource = DtsMain
+      end
+    end
+  end
+  inherited QryMain: TFDQuery
+    SQL.Strings = (
+      'select * from eventos')
+    object QryMainCODIGO: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object QryMainDESCRICAO: TStringField
+      DisplayLabel = 'Descri'#231#227'o'
+      DisplayWidth = 30
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Size = 100
+    end
+    object QryMainTIPO: TIntegerField
+      DisplayLabel = 'Tipo'
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+    end
+  end
+end

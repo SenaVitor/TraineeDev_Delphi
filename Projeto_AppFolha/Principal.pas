@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Conexao;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Conexao, CadEventos1, CadCargos1, CadFuncionarios1;
 
 type
   TFrmPrincipal = class(TForm)
@@ -26,6 +26,10 @@ type
     Sair: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure EventosClick(Sender: TObject);
+    procedure CargosClick(Sender: TObject);
+    procedure CadFuncionariosClick(Sender: TObject);
+    procedure SairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,6 +43,27 @@ implementation
 
 {$R *.dfm}
 
+procedure TFrmPrincipal.CadFuncionariosClick(Sender: TObject);
+begin
+  FormFuncionarios1 := TFormFuncionarios1.Create(Self);
+  FormFuncionarios1.ShowModal;
+  FormFuncionarios1.Free;
+end;
+
+procedure TFrmPrincipal.CargosClick(Sender: TObject);
+begin
+  FormCargos1:= TFormCargos1.Create(Self);
+  FormCargos1.ShowModal;
+  FormCargos1.Free;
+end;
+
+procedure TFrmPrincipal.EventosClick(Sender: TObject);
+begin
+  FormEventos1 := TFormEventos1.Create(Self);
+  FormEventos1.ShowModal;
+  FormEventos1.Free;
+end;
+
 procedure TFrmPrincipal.FormCreate(Sender: TObject);
 begin
   DM := TDM.Create(Self);
@@ -47,6 +72,11 @@ end;
 procedure TFrmPrincipal.FormDestroy(Sender: TObject);
 begin
   DM.Free;
+end;
+
+procedure TFrmPrincipal.SairClick(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

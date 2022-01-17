@@ -2,16 +2,38 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2021/12/16 17:27:51.000.834,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/12/16 18:27:47.000.623,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Principal.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/12/16 18:27:47.000.623,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Principal.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/12/16 18:27:47.000.623,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Principal.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/12/16 18:28:02.000.590,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/12/16 18:28:36.000.226,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2021/12/16 18:29:11.000.808,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2021/12/16 18:29:11.000.808,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/12/16 18:29:11.000.808,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2021/12/16 18:33:18.000.371,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/12/16 18:39:30.000.696,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2021/12/16 18:39:30.000.696,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Conexao.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2021/12/16 18:39:57.000.298,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\AppFolha.dproj=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/01/10 19:05:44.000.541,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 11:12:34.000.499,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 11:36:11.000.224,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadCargos.dfm</Transaction>
+    <Transaction>2022/01/16 11:36:11.000.224,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadCargos.pas</Transaction>
+    <Transaction>2022/01/16 11:37:29.000.297,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit2.pas</Transaction>
+    <Transaction>2022/01/16 15:22:15.100,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit2.pas</Transaction>
+    <Transaction>2022/01/16 15:32:43.139,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadEventos.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit2.pas</Transaction>
+    <Transaction>2022/01/16 15:32:43.139,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadEventos.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit2.dfm</Transaction>
+    <Transaction>2022/01/16 16:02:13.863,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit3.pas</Transaction>
+    <Transaction>2022/01/16 16:09:40.976,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadFuncionarios.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit3.dfm</Transaction>
+    <Transaction>2022/01/16 16:09:40.976,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadFuncionarios.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit3.pas</Transaction>
+    <Transaction>2022/01/16 22:50:38.670,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 22:51:11.942,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadPadrao.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.dfm</Transaction>
+    <Transaction>2022/01/16 22:51:11.942,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadPadrao.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 23:27:21.136,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 23:38:13.870,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadFuncionarios1.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/16 23:38:13.870,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadFuncionarios1.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.dfm</Transaction>
+    <Transaction>2022/01/17 02:36:20.411,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/17 02:37:00.811,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Processos\ProcMudancaDeSalarios.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.dfm</Transaction>
+    <Transaction>2022/01/17 02:37:00.811,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Processos\ProcMudancaDeSalarios.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/17 02:50:27.065,=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
+    <Transaction>2022/01/17 02:58:10.205,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadEventos1.dfm=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.dfm</Transaction>
+    <Transaction>2022/01/17 02:58:10.205,C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\CadEventos1.pas=C:\Users\Vitor\Documents\Embarcadero\Studio\Projects\TraineeDev_Delphi\Projeto_AppFolha\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

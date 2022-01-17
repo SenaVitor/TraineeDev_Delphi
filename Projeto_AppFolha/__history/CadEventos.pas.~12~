@@ -1,0 +1,66 @@
+unit CadEventos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Conexao, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls, Vcl.ExtCtrls, Vcl.Menus, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TFormEventos = class(TForm)
+    QryEventos: TFDQuery;
+    DtsEventos: TDataSource;
+    QryEventosCODIGO: TIntegerField;
+    QryEventosDESCRICAO: TStringField;
+    QryEventosTIPO: TIntegerField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    MainMenu1: TMainMenu;
+    Lista1: TMenuItem;
+    Registro1: TMenuItem;
+    Tipo: TDBRadioGroup;
+    PnlRegistro: TPanel;
+    PnlLista: TPanel;
+    DBGrid1: TDBGrid;
+    Edit1: TEdit;
+    Button1: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure Registro1Click(Sender: TObject);
+    procedure Lista1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormEventos: TFormEventos;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormEventos.FormCreate(Sender: TObject);
+begin
+  QryEventos.Open;
+end;
+
+procedure TFormEventos.Lista1Click(Sender: TObject);
+begin
+  PnlLista.Visible := true;
+  PnlRegistro.Visible := false;
+end;
+
+procedure TFormEventos.Registro1Click(Sender: TObject);
+begin
+  PnlLista.Visible := false;
+  PnlRegistro.Visible := true;
+end;
+
+end.

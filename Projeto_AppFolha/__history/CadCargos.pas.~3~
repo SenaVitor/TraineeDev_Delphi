@@ -1,0 +1,37 @@
+unit CadCargos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Conexao, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls;
+
+type
+  TFormCargos = class(TForm)
+    TblCargos: TFDTable;
+    TblCargosCODIGO: TIntegerField;
+    TblCargosDESCRICAO: TStringField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DtsCargos: TDataSource;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    TblCargosSTR_CALCULADO: TCurrencyField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCargos: TFormCargos;
+
+implementation
+
+{$R *.dfm}
+
+end.

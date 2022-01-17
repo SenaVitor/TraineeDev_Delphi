@@ -107,6 +107,34 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="CadCargos.pas">
+            <Form>FormCargos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CadEventos.pas">
+            <Form>FormEventos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CadFuncionarios.pas">
+            <Form>FormFuncionarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CadPadrao.pas">
+            <Form>FormCadPadrao</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CadFuncionarios1.pas">
+            <Form>FormFuncionarios1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Processos\ProcMudancaDeSalarios.pas">
+            <Form>FormMudancaDeSalario</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CadEventos1.pas">
+            <Form>FormEventos1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

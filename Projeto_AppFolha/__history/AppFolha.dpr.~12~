@@ -1,0 +1,18 @@
+program AppFolha;
+
+uses
+  Vcl.Forms,
+  Principal in 'Principal.pas' {FrmPrincipal},
+  Conexao in 'Conexao.pas' {DM: TDataModule},
+  CadCargos in 'CadCargos.pas' {FormCargos},
+  CadEventos in 'CadEventos.pas' {FormEventos},
+  CadFuncionarios in 'CadFuncionarios.pas' {FormFuncionarios};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.Run;
+end.

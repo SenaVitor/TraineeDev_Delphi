@@ -1,0 +1,5 @@
+inherited FormCargos1: TFormCargos1
+  Caption = 'Cadastro de Cargos'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

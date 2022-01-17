@@ -23,12 +23,15 @@ object FrmPrincipal: TFrmPrincipal
       Caption = 'Cadastros'
       object Cargos: TMenuItem
         Caption = 'Cargos'
+        OnClick = CargosClick
       end
       object Eventos: TMenuItem
         Caption = 'Eventos'
+        OnClick = EventosClick
       end
       object CadFuncionarios: TMenuItem
         Caption = 'Funcion'#225'rios'
+        OnClick = CadFuncionariosClick
       end
       object TabelaINSS: TMenuItem
         Caption = 'Tabela de INSS'
@@ -63,6 +66,7 @@ object FrmPrincipal: TFrmPrincipal
     end
     object Sair: TMenuItem
       Caption = 'Sair'
+      OnClick = SairClick
     end
   end
 end
