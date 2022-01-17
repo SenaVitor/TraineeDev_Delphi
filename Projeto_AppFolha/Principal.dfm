@@ -50,6 +50,7 @@ object FrmPrincipal: TFrmPrincipal
       end
       object eventofuncionrios: TMenuItem
         Caption = 'Lan'#231'ar evento para funcion'#225'rio(s)'
+        OnClick = eventofuncionriosClick
       end
       object ProcFolhaPagamento: TMenuItem
         Caption = 'Folha de Pagamento'

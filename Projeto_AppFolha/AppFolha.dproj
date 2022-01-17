@@ -127,12 +127,16 @@
             <Form>FormFuncionarios1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Processos\ProcMudancaDeSalarios.pas">
-            <Form>FormMudancaDeSalario</Form>
+        <DCCReference Include="Processos\ProcLancarEventosFuncionarios.pas">
+            <Form>FormLancarEventosFuncionarios</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="CadEventos1.pas">
             <Form>FormEventos1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="cadCargos1.pas">
+            <Form>FormCargos1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

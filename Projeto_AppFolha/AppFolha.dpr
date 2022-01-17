@@ -9,8 +9,9 @@ uses
   CadFuncionarios in 'CadFuncionarios.pas' {FormFuncionarios},
   CadPadrao in 'CadPadrao.pas' {FormCadPadrao},
   CadFuncionarios1 in 'CadFuncionarios1.pas' {FormFuncionarios1},
-  ProcMudancaDeSalarios in 'Processos\ProcMudancaDeSalarios.pas' {FormMudancaDeSalario},
-  CadEventos1 in 'CadEventos1.pas' {FormEventos1};
+  ProcLancarEventosFuncionarios in 'Processos\ProcLancarEventosFuncionarios.pas' {FormLancarEventosFuncionarios},
+  CadEventos1 in 'CadEventos1.pas' {FormEventos1},
+  cadCargos1 in 'cadCargos1.pas' {FormCargos1};
 
 {$R *.res}
 

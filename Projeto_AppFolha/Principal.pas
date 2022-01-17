@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Conexao, CadEventos1, CadCargos1, CadFuncionarios1;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Conexao, CadEventos1, CadCargos1, CadFuncionarios1,
+  ProcLancarEventosFuncionarios;
 
 type
   TFrmPrincipal = class(TForm)
@@ -30,6 +31,7 @@ type
     procedure CargosClick(Sender: TObject);
     procedure CadFuncionariosClick(Sender: TObject);
     procedure SairClick(Sender: TObject);
+    procedure eventofuncionriosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,6 +59,13 @@ begin
   FormCargos1.Free;
 end;
 
+procedure TFrmPrincipal.eventofuncionriosClick(Sender: TObject);
+begin
+  FormLancarEventosFuncionarios := TFormLancarEventosFuncionarios.Create(Self);
+  FormLancarEventosFuncionarios.ShowModal;
+  FormLancarEventosFuncionarios.Free;
+end;
+
 procedure TFrmPrincipal.EventosClick(Sender: TObject);
 begin
   FormEventos1 := TFormEventos1.Create(Self);
@@ -78,5 +87,7 @@ procedure TFrmPrincipal.SairClick(Sender: TObject);
 begin
   Close;
 end;
+
+
 
 end.
